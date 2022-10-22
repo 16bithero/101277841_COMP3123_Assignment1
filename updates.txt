@@ -1,0 +1,9 @@
+Models
+- Fix constraints
+
+Routes
+- Fix schema validation
+- Fix match username/error
+- Fix error after deleting
+
+

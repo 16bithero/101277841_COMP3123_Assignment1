@@ -1,0 +1,234 @@
+{
+	"info": {
+		"_postman_id": "6ebfb553-7c3e-4f6e-967e-108fd4904d74",
+		"name": "Assignment 1",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "23608230"
+	},
+	"item": [
+		{
+			"name": "POST - SIGN UP",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"username\": \"Renzzi\",\n    \"email\": \"me@renzzi.ca\",\n    \"password\": \"qwerty123\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3001/api/user/signup",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"api",
+						"user",
+						"signup"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST - LOG IN",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"username\": \"Renzzi\",\n    \"password\": \"qwerty123\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3001/api/user/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"api",
+						"user",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST - CREATE ACCOUNT",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"first_name\": \"Renzzi\",\n    \"last_name\": \"Adorador\",\n    \"email\": \"me@renzzi.ca\",\n    \"gender\": \"Male\",\n    \"salary\": 3000.00\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3001/api/emp/employees",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"api",
+						"emp",
+						"employees"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET - GET LIST",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"first_name\": \"Taylor\",\n    \"last_name\": \"Swift\",\n    \"email\": \"taylorswift13@gmail.com\",\n    \"gender\": \"Female\",\n    \"salary\": 143890.97\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3001/api/emp/employees",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"api",
+						"emp",
+						"employees"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET - GET SPECIFIC",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"first_name\": \"Taylor\",\n    \"last_name\": \"Swift\",\n    \"email\": \"taylorswift13@gmail.com\",\n    \"gender\": \"Female\",\n    \"salary\": 143890.97\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3001/api/emp/employees/63539cabc8fc3588991541b0",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"api",
+						"emp",
+						"employees",
+						"63539cabc8fc3588991541b0"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PUT - UPDATE EMPLOYEE",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"first_name\": \"Pritesh\",\n    \"last_name\": \"Patel\",\n    \"email\": \"professor@pritamworld.com\",\n    \"gender\": \"Male\",\n    \"salary\": 999999999.99\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3001/api/emp/employees/63539cabc8fc3588991541b0",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"api",
+						"emp",
+						"employees",
+						"63539cabc8fc3588991541b0"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE - DELETE EMPLOYEE",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"first_name\": \"Gaga\",\n    \"last_name\": \"Lady\",\n    \"email\": \"lg@pritamworld.com\",\n    \"gender\": \"Female\",\n    \"salary\": 999999.99\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3001/api/emp/employees?eid=63539f5d81ba08f878eb92dd",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"api",
+						"emp",
+						"employees"
+					],
+					"query": [
+						{
+							"key": "eid",
+							"value": "63539f5d81ba08f878eb92dd"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
